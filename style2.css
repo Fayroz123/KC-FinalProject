@@ -1,0 +1,66 @@
+body{
+margin: 0;
+padding: 0;
+font-family: 'poppins',sans-serif;
+box-sizing: border-box;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+section{
+    width: 100%;
+    height: 100%;
+    background: url(./صورة0.jpg);
+    background-size: contain;
+    background-position: center;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+background: chocolate;
+    padding: 10px 3%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero a{
+    font-size: 70px;
+    position: relative;
+    z-index: 2;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px #dad7cd;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.hero a:hover{
+    -webkit-text-fill-color: #3a5a40;
+    transform: translateY(-10px);
+}
+
+.img-box{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 65%;
+    background-image: url(./صورة111.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ;
+}
+.hero .home22:nth-child(1):hover ~ .img-box{
+    background-image: url(./صورة2.jpg);
+}
+
+.hero .home33:nth-child(2):hover ~ .img-box{
+    background-image: url(./صورة1.jpg);
+}
+
+.hero .home44:nth-child(3):hover ~ .img-box{
+    background-image: url(./قصر\ السيف1.jpg);
+}
